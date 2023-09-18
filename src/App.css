@@ -1,0 +1,80 @@
+.title {
+    font-size: 18px;
+}
+
+.containerImages {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-thumbs {
+    display: flex;
+    flex-direction: row;
+    margin-top: 8px;
+}
+
+.img-container {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    height: 250px;
+}
+.container-photographer {
+    display: flex;
+    justify-content: center;
+    margin: 8px;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid red;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.main-container {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.container-main-image {
+    width: 900px;
+}
+@media screen and (max-width: 992px) {
+    .container-main-image {
+        width: 500px;
+    }
+    .img-container {
+        width: 170px;
+        height: 100px;
+    }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+    .container-main-image {
+        width: 300px;
+    }
+    .img-container {
+        width: 100px;
+        height: 80px;
+    }
+}
